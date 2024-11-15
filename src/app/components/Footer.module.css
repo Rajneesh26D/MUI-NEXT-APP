@@ -1,0 +1,108 @@
+/* Footer.module.css */
+
+.footerContainer {
+    background-color: #1e2a38; /* Dark background color as per image */
+    color: #ffffff; /* White text color */
+    padding: 40px 20px;
+  }
+  
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logoSection {
+    max-width: 300px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .logoText {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .description {
+    color: #c0c0c0; /* Lighter color for the description text */
+    margin-bottom: 20px;
+  }
+  
+  .appButtons {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  
+  .appButton {
+    background-color: #1e2a38;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    text-transform: none;
+    font-size: 0.75rem;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .appButton:hover {
+    background-color: #343f4f;
+  }
+  
+  .linksSection {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .linkColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .linkHeader {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .link {
+    color: #c0c0c0;
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .link:hover {
+    color: #ffffff;
+  }
+  
+  .contactInfo {
+    font-size: 0.875rem;
+    color: #c0c0c0;
+    margin-bottom: 8px;
+  }
+  
+  .socialIcons {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+  }
+  
+  .socialIcon {
+    color: #c0c0c0;
+    transition: color 0.3s;
+  }
+  
+  .socialIcon:hover {
+    color: #ffffff;
+  }
+  

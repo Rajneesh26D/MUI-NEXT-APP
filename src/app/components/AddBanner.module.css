@@ -1,0 +1,91 @@
+/* components/AddBanner.module.css */
+.cardContainer {
+    /* margin: 50px 20px; */
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    /* max-width: 1700px; */
+    /* background-color: #f87171; */
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .card {
+    flex: 1;
+    height: 180px;
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cardImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .cardOverlay {
+    position: relative;
+    z-index: 2;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #f9fafb;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .description {
+    color: #f87171;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  .shopNow {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #93c5fd;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 2px;
+  }
+  
+  .shopNow::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #93c5fd;
+    transition: width 0.3s ease;
+  }
+  
+  .shopNow:hover::after {
+    width: 100%;
+  }
+
+  

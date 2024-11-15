@@ -1,0 +1,185 @@
+.div1 {
+    padding-top: 20px;
+}
+
+.div2 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.diva {
+    width: 100%;
+    height: 100%;
+}
+
+.sliderImage {
+    width: 100%;
+    height: 490px; 
+    object-fit: cover; 
+}
+
+.divb, .divc {
+    position: relative;
+    width: 100%;
+    height: 236px; 
+    margin-bottom: 16px;
+}
+
+.sideImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.div4 {
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: whitesmoke;
+    background-color: transparent;
+    padding: 20px;
+}
+
+.shopNowLink {
+    color: rgb(252, 251, 251);
+    gap: 4px;
+    text-decoration: none;
+    margin-top: 10px;
+    align-items: center;
+    position: relative;
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.shopNowLink::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    transform: translateX(-100%);
+    transition: transform 0.7s ease;
+}
+
+.shopNowLink:hover::after {
+    transform: translateX(0);
+}
+
+.shopNowLink:hover {
+    color: white;
+}
+
+.diva :global(.slick-dots) {
+    bottom: 25px;
+    z-index: 1;
+}
+
+.diva :global(.slick-dots li) {
+    width: 20px;
+    height: 20px;
+    margin: 0 6px;
+    position: relative;
+}
+
+.diva :global(.slick-dots li button) {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid black;
+}
+
+.diva :global(.slick-dots li button:before) {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.diva :global(.slick-dots li.slick-active button:before) {
+    background-color: black;
+}
+
+@media (max-width: 960px) {
+    .divb, .divc {
+        height: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .div2 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.slideContainer {
+    position: relative;
+}
+
+.textContainer {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: #232323;
+    background: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+.collectionTitle {
+    font-size: 2rem;
+    color: white;
+    font-weight: normal;
+    margin: 0;
+}
+
+.collectionSubtitle {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    color: rgb(254, 2, 2);
+}
+
+.saleText {
+    font-size: 2.2rem;
+    color: #ffff;
+    margin: 10px 0;
+}
+
+.saleText span {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.shippingText {
+    font-size: 1rem;
+    color: #fbfbfb;
+    margin-bottom: 20px;
+}
+
+.shopButton {
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 10px 15px;
+    background-color: #232323;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.shopButton:hover {
+    background-color: #444444;
+}

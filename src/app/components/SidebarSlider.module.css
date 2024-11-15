@@ -1,0 +1,123 @@
+/* SidebarSlider.module.css */
+
+.container {
+    display: flex;
+    margin-left: 20px;
+}
+
+.sidebar {
+    width: 25%;
+    padding: 30px;
+    background-color: white; 
+    color: #ffffff; 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
+}
+
+.sidebarTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333; 
+}
+
+.sidebarList {
+    list-style: none;
+    padding: 0;
+    color: #333;
+}
+
+.sidebarItem {
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #333;
+}
+
+.browseAll {
+    font-size: 1rem;
+    font-weight: 500;
+    width: 35%;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 2px;
+    cursor: pointer;
+  }
+  
+  .browseAll::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
+  }
+  
+.browseAll:hover::after {
+    width: 90%;
+    
+  }
+
+.sliderContainer {
+    width: 75%;
+    /* padding: 20px; */
+}
+
+
+
+/*  slick arrow css   */
+/* Custom Arrow Styles */
+
+.slick-prev,
+.slick-next {
+  background-color: #1e2a38; 
+  color: #ffffff; 
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 1;
+  transition: background-color 0.3s ease;
+}
+
+/* Hide arrows by default */
+.slick-prev,
+.slick-next {
+  opacity: 0;
+  transition: opacity 0.3s ease; 
+}
+
+/* Show arrows on hover */
+.slick-container:hover .slick-prev,
+.slick-container:hover .slick-next {
+  opacity: 1;
+}
+
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: #343f4f; 
+}
+
+.slick-prev {
+  left: -20px; 
+}
+
+.slick-next {
+  right: -20px; 
+}
+
+.slick-prev .MuiSvgIcon-root,
+.slick-next .MuiSvgIcon-root {
+  font-size: 20px; 
+}
+
+
