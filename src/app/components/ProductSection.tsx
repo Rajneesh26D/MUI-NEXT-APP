@@ -1,6 +1,6 @@
 // ProductSection.tsx
 import React, { useState } from 'react';
-import Slider from 'react-slick';
+import Slider, { Settings } from 'react-slick';
 import { Box, Typography, Button, Rating } from '@mui/material';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import VisibilityIcon from '@mui/icons-material/Visibility';
@@ -123,7 +123,7 @@ const ProductSection: React.FC = () => {
     });
   };
 
-  const settings: any = {
+  const settings: Settings = {
     slidesToShow: 5,
     slidesToScroll: 1,
     arrows: true,
@@ -136,12 +136,14 @@ const ProductSection: React.FC = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
+          slidesToScroll: 1
         },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 1
         },
       },
     ],
